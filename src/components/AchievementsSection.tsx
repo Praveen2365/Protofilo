@@ -13,45 +13,45 @@ const AchievementsSection = () => {
       color: 'from-yellow-400 to-orange-500',
       achievements: [
         {
-          title: 'Bhumi Hackathon 2024–2025',
+          title: 'Dark Pattern Hackathon 2024',
           description: 'Participated in environmental sustainability hackathon',
           details: 'Developed eco-friendly solution for waste management',
           date: '2024'
         },
         {
-          title: 'Smart India Hackathon 2024',
-          description: 'National level hackathon participation',
+          title: 'Smart India Hackathon 2023-2024',
+          description: 'College level hackathon participation',
           details: 'Created innovative solution for digital governance',
           date: '2024'
         }
       ]
     },
-    {
-      id: 2,
-      category: 'Problem Solving Excellence',
-      icon: <Code className="h-8 w-8" />,
-      color: 'from-blue-400 to-purple-500',
-      achievements: [
-        {
-          title: '100+ LeetCode Problems',
-          description: 'Solved diverse algorithmic challenges',
-          details: 'Maintained consistent problem-solving streak',
-          date: '2024'
-        },
-        {
-          title: 'DSA Mastery',
-          description: 'Advanced data structures and algorithms',
-          details: 'Optimized solutions with efficient time complexity',
-          date: '2023-2024'
-        },
-        {
-          title: 'Competitive Programming',
-          description: 'Active participation in coding contests',
-          details: 'Regular participation in CodeChef and Codeforces',
-          date: '2023-2024'
-        }
-      ]
-    },
+    // {
+    //   id: 2,
+    //   category: 'Problem Solving Excellence',
+    //   icon: <Code className="h-8 w-8" />,
+    //   color: 'from-blue-400 to-purple-500',
+    //   achievements: [
+    //     {
+    //       title: '100+ LeetCode Problems',
+    //       description: 'Solved diverse algorithmic challenges',
+    //       details: 'Maintained consistent problem-solving streak',
+    //       date: '2024'
+    //     },
+    //     {
+    //       title: 'DSA Mastery',
+    //       description: 'Advanced data structures and algorithms',
+    //       details: 'Optimized solutions with efficient time complexity',
+    //       date: '2023-2024'
+    //     },
+    //     {
+    //       title: 'Competitive Programming',
+    //       description: 'Active participation in coding contests',
+    //       details: 'Regular participation in CodeChef and Codeforces',
+    //       date: '2023-2024'
+    //     }
+    //   ]
+    // },
     {
       id: 3,
       category: 'Development Milestones',
@@ -59,7 +59,7 @@ const AchievementsSection = () => {
       color: 'from-green-400 to-emerald-500',
       achievements: [
         {
-          title: '10+ Full-Stack Projects',
+          title: '8+ Full-Stack Projects',
           description: 'End-to-end application development',
           details: 'Built scalable web applications using MERN stack',
           date: '2023-2024'
@@ -67,7 +67,7 @@ const AchievementsSection = () => {
         {
           title: 'MERN Stack Expertise',
           description: 'Mastered modern web development stack',
-          details: 'MongoDB, Express.js, React, Node.js proficiency',
+          details: 'Express.js, React, Node.js',
           date: '2024'
         },
         {
@@ -85,7 +85,7 @@ const AchievementsSection = () => {
       color: 'from-purple-400 to-pink-500',
       achievements: [
         {
-          title: 'CGPA 8.20',
+          title: 'CGPA 7.90',
           description: 'Consistent academic performance',
           details: 'Strong foundation in computer science fundamentals',
           date: '2022-2024'
@@ -126,7 +126,7 @@ const AchievementsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient-primary">Notable</span>{' '}
+            {/* <span className="text-gradient-primary">Notable</span>{' '} */}
             <span className="text-gradient-accent">Achievements</span>
           </h2>
           <p className="text-xl text-muted-foreground">Recognition and milestones in my journey</p>
@@ -212,7 +212,7 @@ const AchievementsSection = () => {
             { 
               label: 'Hackathons', 
               value: '5+', 
-              description: 'National & International',
+              description: 'College Level',
               icon: <Lightbulb className="h-5 w-5" />,
               gradient: 'from-yellow-400 to-orange-500'
             },
@@ -225,14 +225,14 @@ const AchievementsSection = () => {
             },
             { 
               label: 'Projects Built', 
-              value: '10+', 
+              value: '8+', 
               description: 'Full-Stack Applications',
               icon: <Target className="h-5 w-5" />,
               gradient: 'from-green-400 to-emerald-500'
             },
             { 
               label: 'Academic CGPA', 
-              value: '8.20', 
+              value: '7.97', 
               description: 'Consistent Excellence',
               icon: <Star className="h-5 w-5" />,
               gradient: 'from-purple-400 to-pink-500'

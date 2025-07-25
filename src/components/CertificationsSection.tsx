@@ -18,10 +18,10 @@ const CertificationsSection = () => {
       id: 1,
       title: 'Full Stack Web Development MASTERY',
       platform: 'Udemy',
-      instructor: 'Prerak Mehta',
-      duration: '56 hours',
-      completionDate: 'December 2024',
-      skills: ['React', 'Node.js', 'MongoDB', 'Express.js'],
+      instructor: 'Angela yu',
+      duration: '61.5 hours',
+      completionDate: 'MAY 2025',
+      skills: ['React', 'Node.js', 'Express.js'],
       description: 'Comprehensive course covering modern full-stack development with MERN stack.',
       rating: 4.8,
       certificate: MERN,
@@ -35,21 +35,19 @@ const CertificationsSection = () => {
     },
     {
       id: 2,
-      title: 'DSA using C and C++',
+      title: 'DSA using JAVA ',
       platform: 'Udemy',
-      instructor: 'Abdul Bari',
-      duration: '58.5 hours',
-      completionDate: 'November 2024',
-      skills: ['C/C++', 'Algorithms', 'Data Structures'],
-      description: 'In-depth coverage of data structures and algorithms with C/C++ implementation.',
+      instructor: 'Mathew Younan',
+      duration: '15 hours',
+      completionDate: 'JULY 2024',
+      skills: ['JAVA', 'Algorithms', 'Data Structures'],
+      description: 'A data structures and algorithms with JAVA implementation and solving leetcode problems.',
       rating: 4.9,
       certificate: code,
       certificateImage: leetcodeImage,
       highlights: [
-        'Mastered 50+ algorithms',
+        'Mastered 10+ algorithms',
         'Implemented all major data structures',
-        'Solved 200+ coding problems',
-        'Optimized algorithm complexities'
       ]
     },
     {
@@ -67,8 +65,8 @@ const CertificationsSection = () => {
       highlights: [
         'Object-oriented problem solving',
         'Java collections framework',
-        'Advanced algorithm analysis',
-        'Industry-standard practices'
+        // 'Advanced algorithm analysis',
+        // 'Industry-standard practices'
       ]
     }
   ];
@@ -125,9 +123,9 @@ const CertificationsSection = () => {
                 <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                   cert.completionDate === 'Ongoing' 
                     ? 'bg-yellow-500/10 text-yellow-500' 
-                    : 'bg-green-500/10 text-green-500'
+                    : 'bg-green-500/10 text-yellow-500'
                 }`}>
-                  {cert.completionDate === 'Ongoing' ? 'In Progress' : 'Completed'}
+                  {cert.completionDate === 'Ongoing' ? 'Completed' : 'Completed'}
                 </span>
               </div>
 
@@ -188,12 +186,12 @@ const CertificationsSection = () => {
         </div>
 
         {/* Certification Stats */}
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {[
             { label: 'Certifications Earned', value: '6+', description: 'Professional Credentials' },
-            { label: 'Study Hours', value: '250+', description: 'Dedicated Learning' },
-            { label: 'Platforms', value: '4', description: 'Learning Sources' },
-            { label: 'Average Rating', value: '4.8/5', description: 'Course Excellence' }
+            { label: 'Study Hours', value: '150+', description: 'Dedicated Learning' },
+            { label: 'Platforms', value: '3+', description: 'Learning Sources' },
+            // { label: 'Average Rating', value: '4.8/5', description: 'Course Excellence' }
           ].map((stat, index) => (
             <div key={index} className="text-center card-glow card-hover animate-fade-in">
               <div className="text-3xl font-bold text-gradient-accent mb-2">{stat.value}</div>

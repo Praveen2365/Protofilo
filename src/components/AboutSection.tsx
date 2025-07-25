@@ -6,8 +6,8 @@ const AboutSection = () => {
   const codeLines = [
     "▸ I'm a final-year Information Technology student with deep expertise in the MERN stack",
     "▸ Skilled in DSA, backend development, and building scalable software solutions with a focus on performance and maintainability.", 
-    "▸ SStrong experience in DSA, backend development, and scalable software architectureolved 100+ problems on LeetCode with advanced problem-solving skills",
-    "▸ Currently mastering DBMS and database optimization techniques",
+    "▸ Strong experience in DSA, backend development, and scalable software architectureolved 100+ problems on LeetCode with advanced problem-solving skills",
+    "▸ Currently mastering  database optimization techniques",
     "▸ Building innovative full-stack applications with modern web technologies",
     "▸ Passionate about creating efficient, maintainable, and scalable solutions",
     "▸ Constantly exploring new technologies and development methodologies"
@@ -17,7 +17,7 @@ const AboutSection = () => {
     {
       icon: <Layers className="h-6 w-6" />,
       title: "MERN Stack Specialist",
-      description: "Expert in MongoDB, Express.js, React, and Node.js development"
+      description: "Expert in Express.js, React, and Node.js development"
     },
     {
       icon: <Brain className="h-6 w-6" />,
@@ -27,7 +27,7 @@ const AboutSection = () => {
     {
       icon: <Database className="h-6 w-6" />,
       title: "Database Expert",
-      description: "Advanced DBMS knowledge and database optimization techniques"
+      description: " DBMS knowledge and database optimization techniques"
     },
     {
       icon: <Zap className="h-6 w-6" />,
@@ -42,7 +42,7 @@ const AboutSection = () => {
     {
       icon: <GitBranch className="h-6 w-6" />,
       title: "Version Control",
-      description: "Advanced Git workflows and collaborative development practices"
+      description: " Git workflows and collaborative development practices"
     }
   ];
 
