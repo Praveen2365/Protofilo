@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { Github, Linkedin, Mail, Download, ArrowDown, Code, Terminal, ExternalLink } from 'lucide-react';
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Download,
+  ArrowDown,
+  Code,
+  Terminal,
+  ExternalLink
+} from 'lucide-react';
+import file from "@/assets/Gpraveen.pdf"; // Import your PDF file here
 
 const HeroSection: React.FC = () => {
   const [showTerminal, setShowTerminal] = useState(true);
@@ -9,14 +19,13 @@ const HeroSection: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowTerminal(false);
-    }, 5000); // Show for 5 seconds as requested
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Praveen2365', label: 'GitHub' },
-    // { icon: Linkedin, href: 'https://www.linkedin.com/in/perumal-s-dev', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:praveenboy2306@gmail.com', label: 'Email' }
   ];
 
@@ -24,23 +33,19 @@ const HeroSection: React.FC = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // ✅ Updated download function using imported PDF
   const downloadResume = () => {
-    // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/lovable-uploads/Perumal_Resume.pdf';
-    link.download = 'Praveen GResume.pdf';
-    document.body.appendChild(link);
+    link.href = file;
+    link.download = 'Praveen_G_Resume.pdf';
     link.click();
-    document.body.removeChild(link);
   };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 bg-gradient-to-b from-background via-background/95 to-card/30">
-      {/* Enhanced animated background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(160,84,39,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(160,84,39,0.05)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(84,81,44,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(84,81,44,0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
-        
-        {/* Floating code elements with enhanced styling */}
+
         {[...Array(12)].map((_, i) => (
           <motion.div
             key={i}
@@ -72,7 +77,6 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          {/* Enhanced Terminal-style introduction */}
           <AnimatePresence>
             {showTerminal && (
               <motion.div
@@ -91,60 +95,17 @@ const HeroSection: React.FC = () => {
                   <span className="text-[hsl(150,10%,64.9%)] text-sm">~/praveen-portfolio</span>
                 </div>
                 <div className="space-y-3 text-sm">
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="text-[hsl(160,84%,39%)]"
-                  >
-                    $ whoami
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1 }}
-                    className="text-[hsl(0,0%,98%)]"
-                  >
-                    Praveen G - Programmer and Full Stack Developer
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.5 }}
-                    className="text-[hsl(160,84%,39%)]"
-                  >
-                    $ echo $EXPERTISE
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 2 }}
-                    className="text-[hsl(0,0%,98%)]"
-                  >
-                    MERN Stack | Problem Solving | 100+ LeetCode
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 2.5 }}
-                    className="text-[hsl(160,84%,39%)]"
-                  >
-                    $ status
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 3 }}
-                    className="text-[hsl(84,81%,44%)]"
-                  >
-                    ● Active - Building scalable solutions
-                  </motion.div>
+                  <motion.div className="text-[hsl(160,84%,39%)]">$ whoami</motion.div>
+                  <motion.div className="text-[hsl(0,0%,98%)]">Praveen G - Programmer and Full Stack Developer</motion.div>
+                  <motion.div className="text-[hsl(160,84%,39%)]">$ echo $EXPERTISE</motion.div>
+                  <motion.div className="text-[hsl(0,0%,98%)]">MERN Stack | Problem Solving | 100+ LeetCode</motion.div>
+                  <motion.div className="text-[hsl(160,84%,39%)]">$ status</motion.div>
+                  <motion.div className="text-[hsl(84,81%,44%)]">● Active - Building scalable solutions</motion.div>
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
 
-          {/* Enhanced tagline that appears after terminal disappears */}
           <AnimatePresence>
             {!showTerminal && (
               <motion.div
@@ -160,7 +121,6 @@ const HeroSection: React.FC = () => {
             )}
           </AnimatePresence>
 
-          {/* Enhanced main heading with better animation */}
           <div className="space-y-6">
             <motion.h1
               className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-[hsl(160,84%,39%)] via-[hsl(175,70%,41%)] to-[hsl(160,84%,39%)] bg-clip-text text-transparent font-mono"
@@ -173,18 +133,14 @@ const HeroSection: React.FC = () => {
             >
               Praveen G
             </motion.h1>
-            
+
             <div className="h-20 md:h-16">
               <TypeAnimation
                 sequence={[
-                  'Full-Stack Developer',
-                  2000,
-                  'MERN Stack Specialist',
-                  2000,
-                  'Problem Solver',
-                  2000,
-                  'Software Architect',
-                  2000,
+                  'Full-Stack Developer', 2000,
+                  'MERN Stack Specialist', 2000,
+                  'Problem Solver', 2000,
+                  'Software Architect', 2000,
                 ]}
                 wrapper="h2"
                 speed={50}
@@ -194,7 +150,6 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Enhanced professional badges */}
           <motion.div
             className="flex flex-wrap justify-center gap-4 mb-8"
             initial={{ opacity: 0, y: 20 }}
@@ -217,7 +172,6 @@ const HeroSection: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* Enhanced CTA Buttons */}
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             initial={{ opacity: 0, y: 30 }}
@@ -233,7 +187,7 @@ const HeroSection: React.FC = () => {
               View Projects
               <ArrowDown className="w-5 h-5" />
             </motion.button>
-            
+
             <motion.button
               onClick={downloadResume}
               className="px-8 py-4 border-2 border-[hsl(160,84%,39%)] text-[hsl(160,84%,39%)] hover:bg-[hsl(160,84%,39%)] hover:text-[hsl(150,10%,8%)] rounded-lg font-semibold text-lg transition-all duration-300 flex items-center gap-2 font-mono backdrop-blur-sm shadow-lg"
@@ -245,7 +199,6 @@ const HeroSection: React.FC = () => {
             </motion.button>
           </motion.div>
 
-          {/* Enhanced Social Links */}
           <motion.div
             className="flex justify-center space-x-6"
             initial={{ opacity: 0, y: 30 }}
