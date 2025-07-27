@@ -1,6 +1,6 @@
 import { Code, Database, Zap, GitBranch, Brain, Layers } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profilePhoto from '@/assets/praveen1.jpg';
+import profilePhoto from '@/assets/praveen2.jpg';
 
 const AboutSection = () => {
   const codeLines = [
