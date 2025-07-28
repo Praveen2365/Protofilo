@@ -1,6 +1,6 @@
 import { Code, Database, Zap, GitBranch, Brain, Layers } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profilePhoto from '@/assets/praveen2.jpg';
+import praveen from '@/assets/praveeng.jpg';
 
 const AboutSection = () => {
   const codeLines = [
@@ -89,7 +89,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-2xl blur-xl opacity-50 animate-pulse"></div>
               <img
-                src={profilePhoto}
+                src={praveen}
                 alt="Praveen G"
                 className="relative w-80 h-80 object-cover rounded-2xl border-4 border-primary/20 shadow-2xl"
               />
