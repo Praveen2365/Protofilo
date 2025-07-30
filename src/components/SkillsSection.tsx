@@ -22,7 +22,7 @@ const SkillsSection = () => {
     { skill: '🎨 Bootstrap', category: 'Frontend', proficiency: 85, achievement: '🚀 Responsive Design', emoji: '🎨' },
     { skill: '💚 Node.js', category: 'Backend', proficiency: 70, achievement: '🚀 Backend Expert', emoji: '💚' },
     { skill: '🚀 Express.js', category: 'Backend', proficiency: 70, achievement: '🚀 API Development', emoji: '🚀' },
-    // { skill: '🗄️ MongoDB', category: 'Backend', proficiency: 82, achievement: '🚀 Database Design', emoji: '🗄️' },
+    { skill: '🗄️ PostgreSQL', category: 'Backend', proficiency: 82, achievement: '🚀 Database Design', emoji: '🗄️' },
     { skill: '🗃️ MySQL', category: 'Backend', proficiency: 70, achievement: '🚀 Query Optimization', emoji: '🗃️' },
     { skill: '☕ Java', category: 'Programming', proficiency: 90, achievement: '🚀 LeetCode Expert', emoji: '☕' },
     // { skill: '🐍 Python', category: 'Programming', proficiency: 85, achievement: '🚀 Automation & Scripting', emoji: '🐍' },
