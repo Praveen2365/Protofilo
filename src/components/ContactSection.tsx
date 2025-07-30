@@ -60,8 +60,8 @@ const ContactSection = () => {
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: 'LinkedIn',
-      // value: 'linkedin.com/in/praveen-g-dev',
-      href: 'https://linkedin.com/in/praveen-g-dev'
+      // value: 'https://www.linkedin.com/in/praveen-govindharaj-8331aa27b/',
+      href: 'https://www.linkedin.com/in/praveen-govindharaj-8331aa27b/'
     },
     {
       icon: <Github className="h-5 w-5" />,
